@@ -20,7 +20,7 @@ export default function ProductCard({ product }) {
     incrementClick();
 
     // Simulate redirect to affiliate link
-    window.open(product.affiliateUrl, "_blank");
+    window.open(`/go/${product.slug}`, "_blank");
 
     // Add some visual feedback
     const element = document.getElementById(`product-${product.id}`);

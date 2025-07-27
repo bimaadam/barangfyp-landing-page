@@ -1,10 +1,13 @@
 // src/data/products.js
 
+import { generateSlug } from "../utils/slug";
+
 export const products = [
   {
     id: 1,
     name: "iPhone 15 Pro Max 256GB - Natural Titanium",
     category: "Elektronik",
+    slug: generateSlug("Iphone 15 Pro Max Titanium"),
     platform: "TikTok Shop",
     price: 18500000,
     originalPrice: 21999000,
